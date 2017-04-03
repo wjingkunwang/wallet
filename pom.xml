@@ -10,11 +10,13 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>design_pattern</module>
+        <module>custom_realize</module>
     </modules>
 
     <properties>
         <lombok.version>1.16.14</lombok.version>
         <jdom.version>1.7-20060614</jdom.version>
+        <mysql.version>5.1.12</mysql.version>
     </properties>
 
     <dependencies>
@@ -29,6 +31,12 @@
             <groupId>maven</groupId>
             <artifactId>dom4j</artifactId>
             <version>${jdom.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.version}</version>
         </dependency>
     </dependencies>
 
