@@ -11,6 +11,12 @@
     <modules>
         <module>design_pattern</module>
         <module>custom_realize</module>
+        <module>algorithm</module>
+        <module>concurrent</module>
+        <module>java_core</module>
+        <module>bigdata</module>
+        <module>netty</module>
+        <module>scala</module>
     </modules>
 
     <properties>

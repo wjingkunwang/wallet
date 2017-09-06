@@ -1,7 +1,7 @@
 package db_pool;
 
 /**
- * Created by wjk on 2017/4/3.
+ * 内部类实现单例模式
  */
 public class PoolManager {
     private static class Pool {
