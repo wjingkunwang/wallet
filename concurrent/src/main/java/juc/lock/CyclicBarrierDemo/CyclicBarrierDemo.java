@@ -5,7 +5,9 @@ import java.util.concurrent.CyclicBarrier;
 
 /**
  * CyclicBarrier可以重用，在释放统一generation线程后，可以通过重置状态和计数来重用
- *
+ * 1. 主要点：底层通过ReentrantLock condition  实现
+ * 2. 栅栏可以是重复使用的，当满了后可以new 新的Generation
+ * 3. 超时话，CyclicBarrier中的runable不执行，但是等待的继续执行
  *
  * CyclicBarrier中我们定义5个线程为同一代，我们起10个线程来测试是否可以重用，如何可以将输出两个"CyclicBarrier's parties is:5"
  */

@@ -5,10 +5,11 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Semaphore;
 
 /**
- * Created by wjk on 17/1/23.
+ * 一个计数信号量。从概念上讲，信号量维护了一个许可集。如有必要，在许可可用前会阻塞每一个 acquire()，
+ * 然后再获取该许可。每个 release() 添加一个许可，从而可能释放一个正在阻塞的获取者。但是，不使用实际的许可对象，Semaphore 只对可用许可的号码进行计数，并采取相应的行动。
  */
 public class SemaphoreDemo {
-    private static final int SEM_MAX = 10;
+    private static final int   SEM_MAX = 10;
     public static void main(String[] args) {
         Semaphore sem = new Semaphore(SEM_MAX);
         //创建线程池
@@ -34,7 +35,7 @@ class MyThread extends Thread {
     public void run() {
         try {
             // 从信号量中获取count个许可
-            sem.acquire(count);
+            sem.acquire(count); //注意位置try里面
 
             Thread.sleep(2000);
             System.out.println(Thread.currentThread().getName() + " acquire count="+count);

@@ -41,9 +41,6 @@ public class CountDownLatchDemo {
                 // 将CountDownLatch的数值减1
                 doneSignal.countDown();
 
-                /**
-                 * 添加如下修改表示其实共享的
-                 */
                 doneSignal.await();
                 System.out.println("11111111111");
             } catch (InterruptedException e) {

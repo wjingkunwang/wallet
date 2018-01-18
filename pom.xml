@@ -17,6 +17,10 @@
         <module>bigdata</module>
         <module>netty</module>
         <module>scala</module>
+        <module>distributed</module>
+        <module>zk</module>
+        <module>zookeeper</module>
+        <module>dubbo</module>
     </modules>
 
     <properties>

@@ -3,7 +3,8 @@ package juc.lock.ReentrantReadWriteLockDemo;
 import java.util.Random;
 
 /**
- * Created by wjk on 2017/3/25.
+ * http://caoxyemail.iteye.com/blog/2129840
+ * http://blog.csdn.net/prestigeding/article/details/53286756
  */
 public class ReadWriteLockTest {
     public static void main(String[] args) {
